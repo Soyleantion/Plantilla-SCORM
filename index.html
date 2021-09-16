@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PLANTILLA</title>
+
+
+	<script type="text/javascript" src="js/SCORM_API_wrapper.js"></script>
+	<script src="js/SCORM_CONFIG.js"></script>
+
+	<!-- ICONOS -->
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+	<!-- HOJAS DE ESTILOS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/loader.css">
+	<link rel="stylesheet" href="css/page.css">
+
+
+	<!-- FUENTES -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+	<body>
+		<!-- LOADER -->
+		<div class="lds-ring" id="loader">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+		<!-- CARGA LA PANTALLA DE BIENVENIDO -->
+		<object class="welcome" id="welcome" data="./content _2/welcome/index.html" name="contenedor">
+		</object>
+		<img class="btn-comenzar" id="btn-comenzar" onclick="hiddenWelcome()" src="" alt="botón comenzar">
+
+		<!-- BARRÁ DE NAVEGACIÓN -->
+		<div id="menu-toggle">
+            <span id='show'>&#9776;</span>
+            <span id='shut'>&#88;</span>
+        </div>
+
+		<main class="slider" id="slider">
+			<!-- fade css -->
+			<nav id= "side-bar">
+				<ul id="slideList" class="menu">
+				</ul>
+			</nav>
+
+			<div class="myslide fade">
+				<div class="diapositiva-uno">
+					<div class="item">
+						<p class="title">TITULO 1</p><!-- ESCRIBIR AQUÍ EL TITULO -->
+						<object class="page" data="pages/page1/page1.html" name="contenedor"></object>
+					</div>
+				</div>
+			</div>
+
+			<div class="myslide fade">
+				<div class="diapositiva-dos">
+					<p class="title">TITULO 2</p class="title"><!-- ESCRIBIR AQUÍ EL TITULO -->
+					<object class="page" data="pages/page2/page2.html" name="contenedor"></object>
+				</div>
+			</div>
+
+			<div class="myslide fade">
+				<div class="diapositiva-tres">
+					<p class="title">Slide 3</p class="title"><!-- ESCRIBIR AQUÍ EL TITULO -->
+					<object class="page" data="pages/page3/page3.html" name="contenedor"></object>
+				</div>
+			</div>
+
+			<div class="myslide fade">
+				<div class="diapositiva-cuatro">
+					<p class="title">Slide 4</p class="title"><!-- ESCRIBIR AQUÍ EL TITULO -->
+					<object class="page" data="pages/page4/page4.html" name="contenedor"></object>
+				</div>
+			</div>
+
+			<div class="myslide fade">
+				<div class="diapositiva-cinco">
+					<p class="title">DIAPOSITIVA NUEVA</p><!-- ESCRIBIR AQUÍ EL TITULO -->
+					<object class="page" data="pages/page5/page5.html" name="contenedor"></object>
+				</div>
+			</div>
+
+						<!-- COPIA PARA AGREGAR UNA NUEVA DIAPOSITIVA -->
+			<!-- /fade css -->
+			<!-- onclick js -->
+			<a id="prev" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a id="next" class="next" onclick="plusSlides(1); modifyLocationLesson()">&#10095;</a>
+			<!-- /onclick js -->
+		</main>
+		<script src="js/slides.js"></script>
+	</body>
+</html>

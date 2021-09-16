@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.0.2 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="FON_PCN1" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+  </metadata>
+  <organizations default="KLAMLIS">
+    <organization identifier="FON_PCN1" structure="hierarchical">
+      <title>TEST UNO</title>
+      <item identifier="FON_PCN1_sco01_i" identifierref="FON_PCN1_sco01_ref" isvisible="true">
+        <title>Unidad 1</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="FON_PCN1_sco01_ref" type="webcontent" adlcp:scormtype="sco" href="index.html">
+
+      <file href="index.html" />
+      <file href="SCORM_API_wrapper.js" />
+      <dependency identifierref="ALLRESOURCES" />
+    </resource>
+
+    <resource identifier="ALLRESOURCES" type="webcontent" adlcp:scormtype="asset">
+      <file href="pages/page1/page1.html"/>
+      <file href="pages/page2/page2.html"/>
+      <file href="pages/page3/page3.html"/>
+      <file href="pages/page4/page4.html"/>
+      <file href="pages/page4/page5.html"/>
+    </resource>
+
+  </resources>
+</manifest>
+

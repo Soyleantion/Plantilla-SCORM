@@ -1,0 +1,144 @@
+* {
+	overflow: hidden;
+}
+
+
+.slider {
+	width: 100vw;
+	background-color: #fff;
+	border: 2px solid rgb(0, 0, 0);
+	position: fixed;
+}
+
+.myslide {
+	/* border: 2px solid rgb(122, 11, 11); */
+	position: fixed;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: radial-gradient(circle, rgb(226, 230, 231), rgb(26, 109, 148));
+	z-index: 2;
+}
+
+/*****************************************MENÚ************************/
+/*********ICONO 3 BARRAS ***********/
+#menu-toggle>#show {
+	margin-left: auto;
+	color: rgb(32, 172, 197);
+	line-height: 5vh;
+	font-size: 7vh;
+	cursor: pointer;
+	position: absolute;
+	left: 6vh;
+	top: 90vh;
+	z-index: 10;
+	border-radius: 15px;
+}
+
+#menu-toggle #show.active {
+	visibility: hidden;
+}
+
+/*********ICONO EQUIS***********/
+#menu-toggle>#shut {
+	margin-left: auto;
+	color: rgb(32, 172, 197);
+	line-height: 5vh;
+	font-size: 7vh;
+	cursor: pointer;
+	position: absolute;
+	left: 6vh;
+	top: 90vh;
+	z-index: 10;
+	visibility: hidden;
+	border-radius: 15px;
+}
+
+#menu-toggle #shut.active {
+	visibility: visible;
+	z-index: 10;
+}
+
+
+
+/*Columna completa*/
+#side-bar {
+	position: fixed;
+	width: 20vw;
+	height: 100%;
+	background: radial-gradient(circle, #ada3e9,#52459e);
+	z-index: 11;
+	transition: all 350ms linear;
+	left: -20vw;
+	border-radius: 5px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+/* MODIFICA EL SCROLLBAR DE LA NAVEGACIÓN */
+#side-bar::-webkit-scrollbar{
+	width: 7px;
+	
+}
+#side-bar::-webkit-scrollbar-thumb{
+	background: #6a11cf;
+	border-radius: 5px;
+}
+
+
+#side-bar.active {
+	left: 0vw;
+} 
+
+
+
+/*********************************************************/
+
+.slider .menu>li {
+	cursor: pointer;
+	height: 5vh;
+
+}
+
+.slider .menu>li:hover {
+	cursor: pointer;
+	height: 5vh;
+	background: rgb(106, 10, 184);
+	border-radius: 5px;
+
+}
+
+.prev,
+.next {
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.1s;
+	user-select: none;
+	z-index: 10;
+
+}
+
+.prev:hover,
+.next:hover {
+	color: rgb(2, 1, 5);
+}
+
+.next {
+	right: 0;
+}
+@media screen and (max-width: 1100px) {}
+
+@media screen and (max-width: 900px) {}
+
+
+@media screen and (max-width: 850px) {}
+
+
+@media screen and (max-width: 600px) {}
+
+@media screen and (max-width: 400px) {}
